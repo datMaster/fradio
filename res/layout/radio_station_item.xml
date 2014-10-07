@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/flRadioStationRow"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/adapter_item_padding" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvRadioStationName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <ProgressBar
+            android:id="@+id/pbLoadingAdapter"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:minHeight="25dip"
+            android:minWidth="25dip"
+            android:padding="@dimen/adapter_item_padding"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/ivLogoAdapter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/hit_fm" />
+
+    </LinearLayout>
+
+</FrameLayout>
